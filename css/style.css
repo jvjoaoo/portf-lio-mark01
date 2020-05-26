@@ -1,0 +1,270 @@
+
+*{
+    margin:0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(194, 191, 191);
+}
+
+#top{
+    background: rgb(3, 3, 138);
+    color: #fff;
+    height: 35px;
+}
+
+#top p{
+    line-height: 2;
+    font-size: 10pt;
+    margin: 4px 227px;
+    float: right;
+}
+
+/*                                          MENU e LOGO                                                                */
+
+.logo{
+    height: 75px;
+    margin: 20px 0px 0px 227px;
+}
+
+nav.menu{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    z-index: 10;
+    background-color: #fff  ;
+    float: right;
+    margin: -10px 0px 10px 0px;
+}
+
+nav.menu ul{
+    list-style: none;
+    position: relative;
+    float: right;
+    margin: 5px 227px 0px 0px;
+    top: 50px;
+}
+nav.menu ul li{
+    width: 125px;
+    float: left;
+    font-size: 13pt;
+    font-weight: bold;
+}
+nav.menu a{
+    padding: 17px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(194, 191, 191); 
+}
+
+nav.menu ul ul{
+    position: absolute;
+    visibility: hidden;
+    padding: 0px;
+    transition: 0.1s;
+}
+nav.menu ul li:hover ul{
+    background-color: rgb(3, 3, 138);
+    visibility: visible;
+}
+nav.menu ul ul li{
+    float: none;
+    font-size: 8pt;
+    
+}
+
+nav.menu ul ul li a{
+    color: #fff;
+    padding: 8px;
+}
+
+nav.menu ul ul li a:hover{
+    background-color: rgb(56, 56, 56);
+}
+nav.menu ul li ul li ul li{
+    margin: 29px 0px 0px 125px;
+    background-color: rgb(3, 3, 138);
+    position: absolute;
+    visibility: hidden; 
+}
+nav.menu ul li ul li:hover ul li{
+    visibility: visible;
+}
+
+/*                                   Slide De Imagens                                                             */
+#slide-show{
+    margin-top:100px ;
+}
+
+/*                                    SECTION 1                     */
+section#conteudo-1{
+    width: 500px;
+    text-align: justify;
+    margin: 10px 0px 50px 227px;
+}   
+section#conteudo-1 p{
+    padding: 10px;
+}
+
+/*                                    ASIDE                                      */
+aside a{
+    text-decoration: none;
+    color: #fff;
+}
+aside#img-lateral{
+    background-color: rgb(3, 3, 138);
+    float: right;
+    color: #fff;
+    text-align: center;
+    line-height: 8;
+    margin: -169px 227px 1px 10px;
+    width: 325px;
+    height: 212px;
+}
+figure.image-lateral{
+    position: relative;
+    border: 1px solid white;
+    box-shadow: 1px 1px 4px black;
+    width: 325px;
+    height: 212px;
+}
+figure.image-lateral img{
+    width: 100%;
+    height: 100%;
+}
+figure.image-lateral figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+figure.image-lateral figcaption:hover{
+    opacity: 1;
+    transition: 1s;
+}
+
+/*                                    BOX DE IMAGENS                        */
+section#box-imgs{
+    width: 894px;
+    margin:  150px 0px 50px 227px;
+}
+section#box-imgs h1{
+    margin: 10px 10px 10px -5px;
+}
+
+ul.album-fotos{
+	width: 1080px;
+	overflow: hidden;
+    list-style: none;
+    margin: 10px 10px 10px -82px;
+}
+
+ul.album-fotos li{
+	float: left;
+	width: 196px;
+	height: 163px;
+	margin: 10px 0px 10px 40px;
+	border-top: 5px solid #fff;
+	background-color: #fff;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.4);  
+	transition: .4s ease-in;
+}
+
+ul.album-fotos li span{
+	opacity: 0;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+	background-color: rgba(0,0,0,.3);
+    font-size: 9pt;
+	line-height: 190px;
+	padding: 5px; 
+}
+
+ul.album-fotos li:hover{
+    -webkit-transform: scale(1.5);
+    text-align: center;
+}
+
+ul.album-fotos li:hover span{
+    opacity: 1;
+    
+}
+
+
+ul.album-fotos li.foto01{
+	background: url("../img/imagem2.jpg") no-repeat;
+	background-position: 50% 50%; 
+	background-size: 196px 163px;
+	background-color: #fff; 
+}
+ul.album-fotos li.foto01:hover{
+	background-position: 0% 0%;
+	 background-size: 196px 163px;
+}
+
+ul.album-fotos li.foto02{
+	background: url("../img/imagem3.jpg") no-repeat;
+	background-position: 50% 50%; 
+	background-size: 196px 163px;
+	background-color: #fff;
+}
+ul.album-fotos li.foto02:hover{
+	background-position: 0% 0%;
+	 background-size: 196px 163px;
+}
+
+
+ul.album-fotos li.foto03{
+	background: url("../img/imagem4.jpg") no-repeat;
+	background-position: 50% 50%; 
+	background-size: 196px 163px;
+	background-color: #fff;
+}
+ul.album-fotos li.foto03:hover{
+	background-position: 0% 0%;
+	 background-size: 196px 163px;
+}
+
+
+ul.album-fotos li.foto04{
+	background: url("../img/imagem5.jpg") no-repeat;
+	background-position: 50% 50%; 
+	background-size: 196px 163px;
+	background-color: #fff;
+}
+ul.album-fotos li.foto04:hover{
+	background-position: 0% 0%;
+	 background-size: 196px 163px;
+}
+
+/*                                    RODAPE                        */
+#rodape{
+    background-color: rgb(117, 117, 122);
+    width: 100%;
+    height: 150px;
+    bottom: 0px;
+    list-style: none;
+    text-align: center;
+}
+
+footer#rodape ul li{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+
+footer#rodape a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(208, 208, 211);
+}
+
+
+
